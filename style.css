@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@400;500;700&family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --lg-font: 'Kaisei Decol', serif;
+    --sm-font: 'Poppins', sans-serif;
+    --pink: #e5445b;
+}
+
+body {
+    font-family: var(--sm-font);
+}
+
+.bg-primary {
+    background-color: var(--pink) !important;
+}
+
+/* Start of navbar */
+/*_____________________________________________________________________________________________________________________________________________________________________________*/
+
+
+.navbar {
+    box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    width: 30px;
+}
+
+.navbar-brand span {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+.nav-link:hover {
+    color: var(--pink) !important;
+}
+
+.nav-item {
+    border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
+}
+
+/* MEDIA QUIERIES*/
+@media(min-width:992px) {
+    .nav-item {
+        border-bottom: none;
+    }
+}
+
+/* END OF NAVBAR */
+/*_____________________________________________________________________________________________________________________________________________________________________________*/
+
+
+/* START OF HEADER */
+/*_____________________________________________________________________________________________________________________________________________________________________________*/
+#header {
+    background: url(ban.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 104px;
+}
+
+/* Button */
+
+.btn:not(.nav-btn button) {
+    background-color: #fff;
+    color: rgb(85, 85, 85);
+    padding: 10px 28px;
+    border-radius: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn:not(.nav-btn button):hover {
+    background-color: var(--pink);
+    color: white;
+}
+
+/* _____________________________________________________________________________________ */
+/* Collection */
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--pink);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.active-filter-btn {
+    color: white !important;
+    background-color: var(--pink) !important;
+}
+
+.collection-img span,
+.special-img span {
+    top: 20px;
+    right: 20px;
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+}
+
+.change-background {
+    background-color: black;
+    color: white;
+}
+
+#discount {
+    background: url(banner-img-1.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* newsletter */
+
+#newsletter {
+    background-color: rgba(179, 179, 179, 0.05);
+}
+
+#newsletter p {
+    max-width: 600px;
+}
+
+#newsletter .input-group {
+    max-width: 500px;
+}
+
+#newsletter .form-control {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+
+#newsletter .btn {
+    background-color: #e5445b;
+    color: white;
+}
+
+#newsletter .btn:hover {
+    background-color: black;
+
+}
+
+/* Footer */
+footer .brand {
+    font-family: var(--lg-font);
+    letter-spacing: 2px;
+}
+
+/* Footer */
